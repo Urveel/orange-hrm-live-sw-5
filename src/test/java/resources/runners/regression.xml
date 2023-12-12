@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testsuite" verbose="1">
+    <listeners>
+        <listener class-name="com.orangehrmlive.demo.testsuite.LoginTest"/>
+        <listener class-name="com.orangehrmlive.demo.testsuite.LoginTestWithDataProvider"/>
+        <listener class-name="com.orangehrmlive.demo.testsuite.UsersTest"/>
+        <listener class-name="com.orangehrmlive.demo.testsuite.UserTestWithDataProvider"/>
+    </listeners>
+    <test name="Regression Test">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.orangehrmlive.demo.testsuite.LoginTest"/>
+            <class name="com.orangehrmlive.demo.testsuite.LoginTestWithDataProvider"/>
+            <class name="com.orangehrmlive.demo.testsuite.UsersTest"/>
+            <class name="com.orangehrmlive.demo.testsuite.UserTestWithDataProvider"/>
+        </classes>
+    </test>
+</suite>
